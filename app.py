@@ -11,6 +11,8 @@ def home():
         return render_template('reply.html', content='Kakinada')
     elif q=='dad':
         return render_template('reply.html', content=myfunc())
+    elif q=='mom':
+        return render_template('reply.html', content=myfunc2())
     else: 
         return render_template('index.html')
         
@@ -18,6 +20,11 @@ def home():
 def myfunc():
     a= 'PSR'
     b=' Kumar'
+    return a+b
+
+def myfunc2():
+    a= 'P'
+    b=' Sony'
     return a+b
 
 
